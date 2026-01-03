@@ -15,6 +15,7 @@ class Page extends Model
         'slug',
         'content',
         'banner_image',
+        'is_clinical',
         'status',
         'meta_seo',
         'order',
@@ -26,6 +27,7 @@ class Page extends Model
         'meta_seo' => 'array',
         'status' => 'string',
         'show_in_nav' => 'boolean',
+        'is_clinical' => 'boolean',
     ];
 
     protected $appends = ['banner_image_url'];

@@ -1,6 +1,7 @@
 @php
     use App\Helpers\CacheHelper;
     $navPages = CacheHelper::getNavigationPages()->where('show_in_nav', true);
+    $clinicalPages = CacheHelper::getNavigationPages(true);
     $navPrograms = CacheHelper::getNavigationPrograms();
     $siteSettings = CacheHelper::getSiteSettings();
 @endphp
@@ -41,6 +42,19 @@
                             <ul class="navbar-nav alt-font">
                                 <li class="nav-item"><a href="{{ route('home') }}" class="nav-link">Home</a></li>
                                 <li class="nav-item"><a href="{{ route('about') }}" class="nav-link">About</a></li>
+                                <li class="nav-item dropdown simple-dropdown">
+                                    <a class="nav-link" href="javascript://">Locations</a>
+                                    <i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                         @foreach($clinicalPages as $page)
+                                            <li>
+                                                <a href="{{ route('pages.show', $page->slug) }}">
+                                                    {{ $page->title }}
+                                                </a>
+                                            </li>
+                                        @endforeach
+                                    </ul>
+                                </li>
                                 <li class="nav-item dropdown simple-dropdown">
                                     <a class="nav-link" href="{{ route('programs.index') }}">Programs</a>
                                     <i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>

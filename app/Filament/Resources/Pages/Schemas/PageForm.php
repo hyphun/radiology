@@ -50,6 +50,10 @@ class PageForm
                     ->label('Show in Navigation')
                     ->default(true)
                     ->helperText('Display this page in header navigation'),
+                Toggle::make('is_clinical')
+                    ->label('Show Under Clinical Locations')
+                    ->default(true)
+                    ->helperText('Display this page in header under clinical locations menu'),
 
                 TextInput::make('order')
                     ->numeric()

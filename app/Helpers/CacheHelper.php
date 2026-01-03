@@ -50,14 +50,19 @@ class CacheHelper
         });
     }
 
-    public static function getNavigationPages(): \Illuminate\Support\Collection
+    public static function getNavigationPages($isClinicalRequired = false): \Illuminate\Support\Collection
     {
-        return Cache::remember(self::NAV_PAGES_CACHE_KEY, self::CACHE_DURATION, function () {
-            return Page::where('status', 'active')
-                ->where('show_in_nav', true)
-                ->orderBy('order', 'asc')
-                ->orderBy('title', 'asc')
-                ->get();
+        return Cache::remember(self::NAV_PAGES_CACHE_KEY, self::CACHE_DURATION, function () use($isClinicalRequired){
+            $query = Page::where('status', 'active')
+                ->where('show_in_nav', true);
+            if($isClinicalRequired){
+                $query->where('is_clinical', true);
+            }else{
+                $query->where('is_clinical', false);
+            }
+            return $query->orderBy('order', 'asc')
+            ->orderBy('title', 'asc')
+            ->get();
         });
     }
 
