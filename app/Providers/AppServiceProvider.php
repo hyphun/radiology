@@ -21,7 +21,7 @@ use App\Models\HomeIntroBox;
 use App\Models\AboutPage;
 use App\Models\PrivacyPage;
 use App\Models\TermsPage;
-
+use URL;
 class AppServiceProvider extends ServiceProvider
 {
 
@@ -38,6 +38,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        if (app()->environment('production')) {
+            URL::forceScheme('https');
+        }
+
         Page::observe(PageObserver::class);
         Program::observe(ProgramObserver::class);
         SiteSetting::observe(SiteSettingObserver::class);
