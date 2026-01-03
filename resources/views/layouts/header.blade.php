@@ -25,7 +25,7 @@
             <nav class="navbar navbar-expand-lg header-transparent bg-transparent border-bottom border-color-transparent-white-light disable-fixed">
                 <div class="container-fluid">
                     <div class="col-auto col-lg-2 me-auto">
-                        <a class="navbar-brand" href="demo-consulting.html">
+                        <a class="navbar-brand" href="{{ route('home') }}">
                             <img src="{{ asset('uploads/'.$siteSettings->site_logo) }}" data-at2x="{{ asset('uploads/'.$siteSettings->site_logo) }}" alt="" class="default-logo">
                             <img src="{{ asset('uploads/'.$siteSettings->site_logo_dark) }}" data-at2x="{{ asset('uploads/'.$siteSettings->site_logo_dark) }}" alt="" class="alt-logo">
                             <img src="{{ asset('uploads/'.$siteSettings->site_logo_mobile) }}" data-at2x="{{ asset('uploads/'.$siteSettings->site_logo_mobile) }}" alt="" class="mobile-logo">
