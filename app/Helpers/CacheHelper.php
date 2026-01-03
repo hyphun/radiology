@@ -15,6 +15,7 @@ class CacheHelper
     private const SITE_SETTING_CACHE_KEY = 'frontend_site_settings';
     private const ACTIVE_PAGES_CACHE_KEY = 'frontend_pages_active';
     private const NAV_PAGES_CACHE_KEY = 'frontend_nav_pages';
+    private const NAV_CLINICAL_PAGES_CACHE_KEY = 'frontend_nav_clinical_pages';
 
     // Cache keys - Programs
     private const PROGRAMS_CACHE_KEY = 'frontend_programs';
@@ -53,16 +54,24 @@ class CacheHelper
     public static function getNavigationPages($isClinicalRequired = false): \Illuminate\Support\Collection
     {
         return Cache::remember(self::NAV_PAGES_CACHE_KEY, self::CACHE_DURATION, function () use($isClinicalRequired){
-            $query = Page::where('status', 'active')
-                ->where('show_in_nav', true);
-            if($isClinicalRequired){
-                $query->where('is_clinical', true);
-            }else{
-                $query->where('is_clinical', false);
-            }
-            return $query->orderBy('order', 'asc')
-            ->orderBy('title', 'asc')
-            ->get();
+            return Page::where('status', 'active')
+                ->where('show_in_nav', true)
+                ->where('is_clinical', 0)
+                ->orderBy('order', 'asc')
+                ->orderBy('title', 'asc')
+                ->get();
+        });
+    }
+
+    public static function getClinicalPages(): \Illuminate\Support\Collection
+    {
+        return Cache::remember(self::NAV_CLINICAL_PAGES_CACHE_KEY, self::CACHE_DURATION, function () {
+            return Page::where('status', 'active')
+                ->where('show_in_nav', true)
+                ->where('is_clinical', 1)
+                ->orderBy('order', 'asc')
+                ->orderBy('title', 'asc')
+                ->get();
         });
     }
 
@@ -204,6 +213,7 @@ class CacheHelper
         Cache::forget(self::PAGES_CACHE_KEY);
         Cache::forget(self::ACTIVE_PAGES_CACHE_KEY);
         Cache::forget(self::NAV_PAGES_CACHE_KEY);
+        Cache::forget(self::NAV_CLINICAL_PAGES_CACHE_KEY);
 
         // Clear individual page slugs
         $pages = Page::all(['slug']);

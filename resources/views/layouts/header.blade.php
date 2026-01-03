@@ -1,7 +1,7 @@
 @php
     use App\Helpers\CacheHelper;
     $navPages = CacheHelper::getNavigationPages()->where('show_in_nav', true);
-    $clinicalPages = CacheHelper::getNavigationPages(true);
+    $clinicalPages = CacheHelper::getClinicalPages();
     $navPrograms = CacheHelper::getNavigationPrograms();
     $siteSettings = CacheHelper::getSiteSettings();
 @endphp
