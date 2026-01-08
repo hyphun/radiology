@@ -49,7 +49,7 @@
                                 <i class="line-icon-Headset icon-extra-large text-base-color mb-25px"></i>
                             </div>
                             <div class="feature-box-content last-paragraph-no-margin">
-                                <span class="d-inline-block alt-font fw-600 text-dark-gray mb-5px fs-20">Call us directly</span>
+                                <span class="d-inline-block alt-font fw-600 text-dark-gray mb-5px fs-20">Call Us</span>
                                 <div class="w-100 d-block">
                                     {!!$siteSettings->phone!!}
                                 </div>
@@ -64,7 +64,7 @@
                                 <i class="line-icon-Mail-Read icon-extra-large text-base-color mb-25px"></i>
                             </div>
                             <div class="feature-box-content last-paragraph-no-margin">
-                                <span class="d-inline-block alt-font fw-600 text-dark-gray mb-5px fs-20">E-mail us</span>
+                                <span class="d-inline-block alt-font fw-600 text-dark-gray mb-5px fs-20">E-mail Us</span>
                                 <div class="w-100 d-block">
                                     {!!$siteSettings->email!!}
                                 </div>
