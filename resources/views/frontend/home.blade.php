@@ -185,7 +185,7 @@
                 <div class="row align-items-center justify-content-center text-start text-sm-center text-lg-start">
                     <div class="col-xl-5 col-lg-6 col-md-7 md-mb-25px">
                         <h2 class="alt-font text-white fw-500 mb-0 cd-headline zoom fancy-text-style-4 text-shadow-double-large ls-minus-1px">Let's discuss your now
-                            <span data-fancy-text='{ "effect": "rotate", "string": ["consulting!", "business!", "innovative!"] }'></span>
+                            <span data-fancy-text='{ "effect": "rotate", "string": ["Journey", "Opportunity", "Career","Profession","Credential"] }'></span>
                         </h2>
                     </div>
                     <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 offset-xl-1 icon-with-text-style-08">
