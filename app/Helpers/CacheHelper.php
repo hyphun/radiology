@@ -223,11 +223,12 @@ class CacheHelper
     }
 
     public static function clearProgramCache(): void{
-        Cache::forget(self::PROGRAMS_CACHE_KEY);
-        Cache::forget(self::ACTIVE_PROGRAMS_CACHE_KEY);
-        Cache::forget(self::NAV_PROGRAMS_CACHE_KEY);
-        Cache::forget(self::FEATURED_PROGRAMS_CACHE_KEY);
-        Cache::forget(self::ACTIVE_PROGRAMS_PAGINATED_CACHE_REGISTRY);
+        Cache::flush();
+        // Cache::forget(self::PROGRAMS_CACHE_KEY);
+        // Cache::forget(self::ACTIVE_PROGRAMS_CACHE_KEY);
+        // Cache::forget(self::NAV_PROGRAMS_CACHE_KEY);
+        // Cache::forget(self::FEATURED_PROGRAMS_CACHE_KEY);
+        // Cache::forget(self::ACTIVE_PROGRAMS_PAGINATED_CACHE_REGISTRY);
     }
 
     /**
