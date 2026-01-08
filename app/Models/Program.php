@@ -24,6 +24,7 @@ class Program extends Model
         'meta_title',
         'meta_description',
         'program_url',
+        'cta_text',
         'additional_details',
     ];
 

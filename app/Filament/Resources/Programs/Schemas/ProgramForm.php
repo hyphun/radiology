@@ -73,6 +73,8 @@ class ProgramForm
             TextInput::make('program_url')
                 ->label('Program URL')
                 ->helperText('Leave empty to auto-generate from title'),
+            TextInput::make('cta_text')
+                ->label('Program URL Button Text'),
             Textarea::make('additional_details')
                 ->rows(4)
                 ->helperText('JSON or extra notes; optional.')

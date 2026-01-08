@@ -30,7 +30,7 @@
                         <p class="mb-6">
                             {!! $program->description!!}
                         </p>
-                        <a href="{{$program->program_url}}?ref=program_show" class="btn btn-medium btn-dark-gray btn-box-shadow btn-round-edge mt-10px" style="" el="childs" staggervalue="100" easing="easeOutQuad">Enroll Now</a>
+                        <a href="{{$program->program_url}}?ref=program_show" target="_blank" class="btn btn-medium btn-dark-gray btn-box-shadow btn-round-edge mt-10px" style="" el="childs" staggervalue="100" easing="easeOutQuad">{{ $program->cta_text??'Enroll Now'}}</a>
                     </div>
                 </div>
         </section>
