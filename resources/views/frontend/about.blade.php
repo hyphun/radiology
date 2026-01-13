@@ -2,7 +2,7 @@
 @section('title', $page->title . ' | Radiology Services')
 @section('content')
  <!-- start section -->
-        <section class="sm-mb-50px bg-dark-gray"  data-parallax-background-ratio="0.5" style="background-image: url({{asset('assets/images/aboutpage-bg.jpg')}}); height:350px; background-size: contain !important;"></section>
+        <section class="sm-mb-50px bg-dark-gray"  data-parallax-background-ratio="0.5" style="background-image: url({{asset('assets/images/radiology_about_bg.jpg')}}); height:350px; background-size: contain !important;"></section>
         <!-- end section -->
         <!-- start section -->
         <section class="p-0">

@@ -2,7 +2,7 @@
 @section('title', 'Contact Us | Radiology Services')
 @section('content')
  <!-- start page title -->
-        <section class="page-title-big-typography bg-dark-gray ipad-top-space-margin xs-py-0" data-parallax-background-ratio="0.5" style="background-image: url({{ asset('assets/images/contact-bg.jpg') }});">
+        <section class="page-title-big-typography bg-dark-gray ipad-top-space-margin xs-py-0" data-parallax-background-ratio="0.5" style="background-image: url({{ asset('assets/images/radiology_contactus.jpg') }});">
             <div class="opacity-light bg-dark-gray"></div>
             <div class="container">
                 <div class="row align-items-center justify-content-center small-screen">
@@ -36,7 +36,7 @@
                                 <i class="line-icon-Geo2-Love icon-extra-large text-base-color mb-25px"></i>
                             </div>
                             <div class="feature-box-content last-paragraph-no-margin">
-                                <span class="d-inline-block alt-font fw-600 text-dark-gray mb-5px fs-20">Our office</span>
+                                <span class="d-inline-block alt-font fw-600 text-dark-gray mb-5px fs-20"> Office</span>
                                 <p>{!!$siteSettings->address!!}</p>
                             </div>
                         </div>

@@ -184,17 +184,17 @@
             <div class="container position-relative">
                 <div class="row align-items-center justify-content-center text-start text-sm-center text-lg-start">
                     <div class="col-xl-5 col-lg-6 col-md-7 md-mb-25px">
-                        <h2 class="alt-font text-white fw-500 mb-0 cd-headline zoom fancy-text-style-4 text-shadow-double-large ls-minus-1px">Let's discuss your
+                        <h2 class="alt-font text-white fw-500 mb-0 cd-headline zoom fancy-text-style-4 text-shadow-double-large ls-minus-1px">Let's discuss your new
                             <span data-fancy-text='{ "effect": "rotate", "string": ["Journey", "Opportunity", "Career","Profession","Credential"] }'></span>
                         </h2>
                     </div>
                     <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 offset-xl-1 icon-with-text-style-08">
                         <div class="feature-box feature-box-left-icon-middle text-start">
                             <div class="feature-box-icon feature-box-icon-rounded w-110px h-110px xs-w-80px xs-h-80px rounded-circle bg-base-color me-20px xs-me-15px">
-                                <i class="line-icon-Handshake icon-extra-large text-white lh-100"></i>
+                                <i class="feather icon-feather-phone-call icon-extra-large text-white lh-100"></i>
                             </div>
                             <div class="feature-box-content last-paragraph-no-margin xs-mt-15px xs-mb-15px">
-                                <span class="fs-24 lh-32 xs-fs-22 xs-lh-32 text-white">Looking for collaboration? <a href="mailto:info@yourdomain.com" class="text-decoration-line-bottom text-white fw-500">{{$siteSetting->primary_contact}}</a></span>
+                                <span class="fs-24 lh-32 xs-fs-22 xs-lh-32 text-white">Call Now <a href="mailto:info@yourdomain.com" class="text-decoration-line-bottom text-white fw-500">{{$siteSetting->primary_contact}}</a></span>
                             </div>
                         </div>
                     </div>
