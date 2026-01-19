@@ -7,7 +7,7 @@
             <div class="container">
                 <div class="row align-items-center justify-content-center small-screen">
                     <div class="col-lg-6 col-md-8 position-relative text-center page-title-extra-small" data-anime='{ "el": "childs", "rotateX": [90, 0], "opacity": [0,1], "staggervalue": 150, "easing": "easeOutQuad" }'>
-                        <h1 class="mb-5px alt-font text-white fw-400"><span class="opacity-6">Love to hear from you</span></h1>
+                        <h1 class="mb-5px alt-font text-white fw-400"><span class="opacity-6">Get in touch!</span></h1>
                         <h2 class="mb-0 text-white alt-font ls-minus-2px text-shadow-double-large fw-500">Contact us</h2>
                     </div>
                     <div class="down-section text-center" data-anime='{ "translateY": [100, 0], "opacity": [0,1], "easing": "easeOutQuad" }'>
