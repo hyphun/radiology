@@ -11,6 +11,7 @@ Route::get('/about', [PageController::class, 'aboutPage'])->name('about');
 Route::get('/services', fn() => redirect()->route('pages.show', 'services'))->name('services');
 Route::get('/privacy-policy', [PageController::class, 'privacyPage'])->name('privacy');
 Route::get('/terms-conditions', [PageController::class, 'termsPage'])->name('terms');
+Route::get('/gallery', [PageController::class, 'galleryPage'])->name('gallery');
 
 Route::prefix('programs')->name('programs.')->group(function () {
     Route::get('/', [ProgramController::class, 'index'])->name('index');
