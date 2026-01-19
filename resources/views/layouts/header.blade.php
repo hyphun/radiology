@@ -76,6 +76,9 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item"><a href="{{ route('contact.show') }}" class="nav-link">Contact</a></li>
+                                <li class="nav-item">
+                                    <a href="{{ route('gallery') }}" class="nav-link">Gallery</a>
+                                </li>
                                 <li class="nav-item dropdown simple-dropdown">
                                     <a class="nav-link" href="javascript://">More</a>
                                     <i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>

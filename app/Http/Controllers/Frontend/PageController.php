@@ -46,4 +46,12 @@ class PageController extends Controller
         ]);
     }
 
+    public function galleryPage()
+    {
+        $files = StaticPageHelper::getGalleryPage();
+        return view('frontend.gallery', [
+            'files' => $files,
+        ]);
+    }
+
 }
