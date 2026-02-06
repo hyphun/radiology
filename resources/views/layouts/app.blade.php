@@ -41,5 +41,8 @@
         <script type="text/javascript" src="{{asset('assets/js/vendors.min.js')}}"></script>
         <script type="text/javascript" src="{{asset('assets/js/main.js')}}"></script>
         @stack('scripts')
+        <style>
+            body{color:#1c1c1c !important;}
+        </style>
     </body>
 </html>
