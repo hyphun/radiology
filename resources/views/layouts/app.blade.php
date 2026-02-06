@@ -43,7 +43,6 @@
         @stack('scripts')
         <style>
             body{color:#1c1c1c !important;}
-            a{color:#1c1c1c !important;}
         </style>
     </body>
 </html>
