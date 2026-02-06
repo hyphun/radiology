@@ -5,8 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
-        <title>@yield('title', 'Radiology Center - Advanced Imaging Services')</title>
-        <meta name="description" content="@yield('meta_description', 'Advanced Imaging Services at Our Radiology Center. State-of-the-art technology for accurate diagnostics.')">
+        <title>@yield('title', 'Radiology Education')</title>
+        <meta name="description" content="@yield('meta_description', 'Radiology Education')">
 
         <link rel="shortcut icon" href="{{asset('assets/images/favicon.png')}}">
         <link rel="apple-touch-icon" href="{{asset('assets/images/apple-touch-icon-57x57.png')}}">
@@ -15,7 +15,7 @@
         <!-- google fonts preconnect -->
 
         {{-- Open Graph Meta --}}
-        <meta property="og:title" content="@yield('title', 'Radiology Center')">
+        <meta property="og:title" content="@yield('title', 'Radiology Education')">
         <meta property="og:description" content="@yield('meta_description')">
         <meta property="og:type" content="website">
         <meta property="og:url" content="{{ request()->url() }}">

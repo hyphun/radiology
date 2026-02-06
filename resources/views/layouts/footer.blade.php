@@ -55,7 +55,7 @@
                     </div>
                     <!-- end divider -->
                     <!-- start copyright -->
-                    <div class="col-lg-6 pt-25px pb-25px md-pt-0 fs-16 last-paragraph-no-margin order-2 order-lg-1 text-center text-lg-start"><p>&copy; 2025 Radiology is Proudly Powered by <a href="https://advancedimagingreview.com" target="_blank" class="text-decoration-line-bottom text-dark-gray fw-500">AdvancedImagingReview</a></p></div>
+                    <div class="col-lg-6 pt-25px pb-25px md-pt-0 fs-16 last-paragraph-no-margin order-2 order-lg-1 text-center text-lg-start"><p>&copy; 2025 <a href="#" target="_blank" class="text-decoration-line-bottom text-dark-gray fw-500">Center for Radiology Education</a></p></div>
                     <!-- end copyright -->
                     <!-- start footer menu -->
                     <div class="col-lg-6 pt-25px pb-25px md-pb-5px fs-16 order-1 order-lg-2 text-center text-lg-end">

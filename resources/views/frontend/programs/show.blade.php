@@ -42,7 +42,7 @@
                 <div class="row justify-content-center mb-1">
                     <div class="col-lg-7 text-center">
                         <span class="fw-600 ls-1px fs-15 alt-font d-inline-block text-uppercase text-base-color">You may also like</span>
-                        <h2 class="alt-font text-dark-gray fw-600 ls-minus-2px">Related programs</h2>
+                        <h2 class="alt-font text-dark-gray fw-600 ls-minus-2px">Related Programs</h2>
                     </div>
                 </div>
                 <div class="row">

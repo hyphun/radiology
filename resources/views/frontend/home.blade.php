@@ -101,14 +101,14 @@
             <div class="container-fluid">
                 <div class="row justify-content-center mb-3">
                     <div class="col-xl-5 col-lg-7 col-md-8 text-center" data-anime='{ "opacity": [0,1], "duration": 800, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                        <span class="fw-600 ls-1px fs-16 alt-font d-inline-block text-uppercase mb-5px text-base-color">Cutting Age Programs</span>
+                        <span class="fw-600 ls-1px fs-16 alt-font d-inline-block text-uppercase mb-5px text-base-color">CERTIFICATES & DEGREES</span>
                         <h2 class="alt-font text-dark-gray fw-600 ls-minus-2px">Radiology Programs</h2>
                     </div>
                 </div>
-                <div class="row row-cols-1 row-cols-xl-4 row-cols-md-2 row-cols-sm-2 justify-content-center" data-anime='{ "el": "childs", "translateX": [30, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                <div class="row row-cols-1 row-cols-xl-3 row-cols-md-2 row-cols-sm-2 justify-content-center" data-anime='{ "el": "childs", "translateX": [30, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
                         @if($programs)
                             @forelse($programs as $program)
-                                 <div class="col interactive-banner-style-05 lg-mb-30px position-relative z-index-1">
+                                 <div class="col interactive-banner-style-05 lg-mb-30px position-relative z-index-1 mb-3">
                         <div class="atropos" data-atropos data-atropos-perspective="1450">
                             <a href="{{route('programs.show',$program->slug)}}" class="position-absolute z-index-1 top-0px left-0px h-100 w-100"></a>
                             <div class="atropos-scale">
